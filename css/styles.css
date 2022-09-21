@@ -75,12 +75,12 @@ a {
     color: var(--title-text-color);
     transition: color var(--transition-dur-and-func);
 }
-.site-nav__link-current {
+.site-nav__link_current {
     color: var(--accent-color);
     position: relative;
     transition: color var(--transition-dur-and-func);
 }
-.site-nav__link-current::after {
+.site-nav__link_current::after {
     display: block;
     position: absolute;
     left: 0;
@@ -100,7 +100,7 @@ a {
     text-decoration: none;
     color: var(--accent-color);
 }
-.logo-mod {
+.logo_mod {
     margin-right: 93px;
 }
 .logo-header {
@@ -370,7 +370,7 @@ a {
     padding-bottom: 60px;
     background-color: var(--secondary-color);
 }
-.logo-footer {
+.logo_footer {
     margin-bottom: 20px;
 }
 
@@ -438,7 +438,7 @@ a {
     justify-content: center;
     align-items: center;
 }
-.footer-form__button-submit {
+.button_submit {
     column-gap: 10px;
 }
 
@@ -669,7 +669,7 @@ a {
     gap: 8px;
     margin-bottom: 50px;
 }
-.list-btn {
+.list-buttons__btn {
     padding: 6px 22px;
     font-family: inherit;
     font-style: normal;
@@ -685,8 +685,8 @@ a {
                 box-shadow var(--transition-dur-and-func),
                 color var(--transition-dur-and-func);
 }
-.list-btn:active, .list-btn:hover,
-.list-btn:focus {
+.list-buttons__btn:active, .list-buttons__btn:hover,
+.list-buttons__btn:focus {
     color: var(--primary-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
                 0px 1px 2px rgba(0, 0, 0, 0.08), 
@@ -698,23 +698,23 @@ a {
     flex-wrap: wrap;
     gap: 30px;
 }
-.portfolio-link {
+.list-cards__link {
     display: block;
     color: var(--title-text-color);
     transition: box-shadow var(--transition-dur-and-func);
 }
-.portfolio-link:hover,
-.portfolio-link:focus {
+.list-cards__link:hover,
+.list-cards__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.over-thumb {
+.list-cards__overlay {
     position: relative;
     overflow: hidden; 
 }
-.overlay-box {
+.list-cards__aside {
     position: absolute;
     top: 0;
     left: 0;
@@ -727,22 +727,22 @@ a {
     transition: transform var(--transition-dur-and-func),
                 background-color var(--transition-dur-and-func);
 }
-.overlay-text {
+.list-cards__aside-text {
     font-style: normal;
     font-size: 18px;
     line-height: 1.56;
     color: var(--primary-color);
 }
-.portfolio-link:hover .overlay-box, 
-.portfolio-link:focus .overlay-box {
+.list-cards__link:hover .list-cards__aside, 
+.list-cards__link:focus .list-cards__aside {
     transform: translateY(0%);
 }
-.cards-box {
+.list-cards__box {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
-.list-title {
+.list-cards__title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -750,7 +750,7 @@ a {
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
-.list-item {
+.list-cards__subtitle {
     font-size: 16px;
     line-height: 1.875;
     color: var(--text-color);
