@@ -13,10 +13,9 @@
     &:hover {
         color: var(--accent-color);
     }
-
-    &_address {
-     opacity: 1;
-    }
+}
+.contacts-footer__link_address {
+    opacity: 1;
 }
 .contacts-footer__item:not(:last-child) {
     margin-bottom: 9px;
